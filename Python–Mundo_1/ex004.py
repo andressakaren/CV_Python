@@ -1,0 +1,11 @@
+n1 = input('Digite algo: ')
+print('O tipo primitivo desse valor é: ', type(n1))
+print('Só tem espaços?', n1.isspace())
+print('É alfabético??', n1.isalpha())
+print('É um número?', n1.isnumeric())
+print('É alfanumérico?', n1.isalnum())
+print('Está em maiúsculas?, está em minúsculas?', n1.isupper(), 'e', n1.islower())
+print('Está capitalizada?', n1.istitle())
+
+f = input('Digite uma frase: ')
+print('A primeira letra será maiúscula.', f.capitalize())
