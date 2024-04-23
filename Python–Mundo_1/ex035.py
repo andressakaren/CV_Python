@@ -1,5 +1,5 @@
 def main():
-    # A soma de dois lados é sempre menor que o terceiro lado
+    # A soma de dois lados é sempre maior que o terceiro lado
     
     l1 = int(input('Digite o valor do lado 1: '))    
     l2 = int(input('Digite o valor do lado 2: '))    
