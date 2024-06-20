@@ -1,16 +1,14 @@
 def main():
-    frase = str(input('Digite uma frase que deseja verificar se é um Palíndromo: ')).strip()
+    frase = str(input('Digite uma frase que deseja verificar se é um Palíndromo: ')).strip().upper()
     
     # Substituir o espaço por uma string vazia
-    fraseSem_espaco = frase.replace(' ', '')
+    fraseSem_espaco = frase.replace(' ', '')   
+    fraseInversa = fraseSem_espaco[::-1]
     
-    indo = fraseSem_espaco[0:]
-    voltando = fraseSem_espaco[::-1]
-    
-    if indo == voltando:
-        print('É um políndromo.')
+    if fraseSem_espaco == fraseInversa:
+        print(f'{fraseSem_espaco} e {fraseInversa} são iguais. É um políndromo.')
     else:
-        print('Não é um políndromo.')  
+        print(f'{fraseSem_espaco} e {fraseInversa} NÃO são iguais. Não é um políndromo.')  
     
 if __name__ == '__main__':
     main()
